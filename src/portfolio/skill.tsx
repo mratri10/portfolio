@@ -29,8 +29,8 @@ const SkillPage = () => {
     return (
         <div className='col-span-1 p-4 text-white'>
             <div>
-                <h2 className="text-3xl font-bold mb-3">My Skills</h2>
-                <div className="grid grid-cols-2 gap-2">
+                <h2 className="text-xl font-bold mb-3">My Skills</h2>
+                <div className="grid lg:grid-cols-2 lg:gap-2 grid-cols-1 gap-1">
                     {dataMySkill.myskills.map((item, i) => {
                         return (
                             <button key={i} onClick={() => onPopup({
@@ -45,7 +45,7 @@ const SkillPage = () => {
                                     }`
                                 }>
                                 <div className="text-left">
-                                    <h3 className="text-xl font-semibold">{item.name}</h3>
+                                    <h3 className="text-lg font-semibold">{item.name}</h3>
                                     <h4>{item.status}</h4>
                                 </div>
                                 {item.company ?
@@ -104,7 +104,7 @@ const SkillPage = () => {
                                         {item.description.map((v, j) => (
                                             <div key={j} className="flex">
                                                 <h1>{j + 1}.</h1>
-                                                <h1 className="ml-3">{v}</h1>
+                                                <h1 key={j} className="ml-3">{v}</h1>
                                             </div>
                                         ))}
                                     </div>

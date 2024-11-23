@@ -53,24 +53,22 @@ const ProfilePage = () => {
                 <div className='pt-5'>
                     <h1 className='text-xl font-semibold'>Contact</h1>
                 </div>
-                <div className="grid grid-cols-2 gap-2">
-                    {profileData.contact.map((value, key) => (
-                        <div key={key} className='grid grid-cols-4 rounded-lg bg-gray-700 p-1 items-center text-white'>
-                            <div>
-                                {value.icon ?
-                                    <div className='flex bg-white rounded-lg justify-center items-center w-8 h-8 m-1'>
-                                        <div className='bg-cover w-5 h-5' style={{
-                                            backgroundImage: `url(${require(`../assets/${value.image}`)})`,
-                                        }} />
-                                    </div> :
-                                    <div className='bg-cover w-8 h-8 m-1' style={{
+                {profileData.contact.map((value, key) => (
+                    <div key={key} className='grid grid-cols-4 rounded-lg bg-gray-700 p-1 items-center text-white mt-2'>
+                        <div>
+                            {value.icon ?
+                                <div className='flex bg-white rounded-lg justify-center items-center w-8 h-8 m-1'>
+                                    <div className='bg-cover w-5 h-5' style={{
                                         backgroundImage: `url(${require(`../assets/${value.image}`)})`,
-                                    }} />}
-                            </div>
-                            <h1 className='text-right mr-5 col-span-3' style={{ flex: 1, textAlign: 'right' }}>{value.value}</h1>
+                                    }} />
+                                </div> :
+                                <div className='bg-cover w-8 h-8 m-1' style={{
+                                    backgroundImage: `url(${require(`../assets/${value.image}`)})`,
+                                }} />}
                         </div>
-                    ))}
-                </div>
+                        <h1 className='text-right mr-5 col-span-3' style={{ flex: 1, textAlign: 'right' }}>{value.value}</h1>
+                    </div>
+                ))}
             </div>
             <div className='pt-5'>
                 <h1 className='text-xl font-semibold'>Education</h1>
@@ -79,7 +77,7 @@ const ProfilePage = () => {
                 {profileData.education.map((item, i) => (
                     <div key={i} className={`items-center bg-gray-700 p-2 rounded-lg w-full text-white`
                     }>
-                        <h3 className="text-xl font-semibold text-left">{item.name}</h3>
+                        <h3 className="text-lg font-semibold text-left">{item.name}</h3>
                         <div>
                             <h6>{item.masuk} - {item.lulus}</h6>
                         </div>
@@ -95,7 +93,7 @@ const ProfilePage = () => {
             {profileData.alamat.map((item, i) => (
                 <div key={i} className={`items-center mt-2 bg-gray-700 p-2 rounded-lg w-full text-white`
                 }>
-                    <h3 className="text-xl font-semibold text-left">{item.type}</h3>
+                    <h3 className="text-lg font-semibold text-left">{item.type}</h3>
                     <div>
                         <h1>{item.provinsi} - {item.kota} - {item.kecamatan} - {item.kelurahan}</h1>
                         <h1>{item.jalan}</h1>
