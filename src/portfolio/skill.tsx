@@ -83,7 +83,7 @@ const SkillPage = () => {
                 </div>
             </div>
             {popup ?
-                <div className="fixed inset-0 items-center justify-center bg-black bg-opacity-50">
+                <div className="fixed inset-0 items-center justify-center bg-black bg-opacity-50 hidden lg:block">
                     <div className="max-w-2xl m-auto my-10 px-4 lg:px-0 h-screen">
                         <div className="bg-white text-black rounded-lg shadow-lg relative p-4" style={{ height: "90%" }}>
                             <div className="grid grid-cols-2 border-b-4 border-black mb-2">
@@ -98,6 +98,39 @@ const SkillPage = () => {
                                     </div> : <div />}
                             </div>
                             <div className="overflow-y-auto" style={{ height: "85%" }}>
+                                {skill?.skills.map((item, i) => (
+                                    <div key={i}>
+                                        <h1 className="font-bold">{item.title}</h1>
+                                        {item.description.map((v, j) => (
+                                            <div key={j} className="flex">
+                                                <h1>{j + 1}.</h1>
+                                                <h1 key={j} className="ml-3">{v}</h1>
+                                            </div>
+                                        ))}
+                                    </div>
+                                ))}
+                            </div>
+                            <button className=" flex justify-self-center bg-gray-800 text-white px-4 py-2 rounded-lg mt-3" onClick={() => onPopup()}><h1>Close</h1></button>
+                        </div>
+
+                    </div>
+                </div> : null}
+            {popup ?
+                <div className="fixed inset-0 items-center justify-center bg-black bg-opacity-50 block lg:hidden">
+                    <div className="max-w-2xl m-auto my-10 px-4 lg:px-0 h-screen">
+                        <div className="bg-white text-black rounded-lg shadow-lg relative p-4" style={{ height: "90%" }}>
+                            <div className="grid grid-cols-2 border-b-4 border-black mb-2">
+                                <div>
+                                    <h1 className="text-lg font-bold">{skill?.name}</h1>
+                                    <h1>{skill?.status}</h1>
+                                </div>
+                                {skill?.experience != null && skill.experience > 0 ?
+                                    <div className="text-right">
+                                        <h5 className='text-red-400'>experienced</h5>
+                                        <h1 className="text-lg font-semibold">{skill?.experience} Month</h1>
+                                    </div> : <div />}
+                            </div>
+                            <div className="overflow-y-auto" style={{ height: "80%" }}>
                                 {skill?.skills.map((item, i) => (
                                     <div key={i}>
                                         <h1 className="font-bold">{item.title}</h1>
