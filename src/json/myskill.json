@@ -23,7 +23,6 @@
                     "name":"PT Pedepokan 79"
                 }
             ],
-
             "skills":[
                 {
                     "title":"React Native Core",
@@ -335,25 +334,29 @@
            "name":"React TS/JS",
             "since":"03-02-2019",
             "status":"Intermediate ",
-            "type":"Web Developer" 
+            "type":"Web Developer" ,
+            "skills":[]
         },
         {
             "name":"Express JS",
             "since":"05-06-2023",
             "status":"Beginner ",
-            "type":"Back End Developer" 
+            "type":"Back End Developer" ,
+            "skills":[]
         },
         {
             "name":"Codeigniter",
             "since":"03-06-2019",
             "status":"Intermediate ",
-            "type":"Fullstack Developer" 
+            "type":"Fullstack Developer" ,
+            "skills":[]
         },
         {
             "name":"Laravel",
             "since":"03-02-2019",
             "status":"Intermediate ",
-            "type":"Fullstack Developer" 
+            "type":"Fullstack Developer" ,
+            "skills":[]
         }
     ]
 }
