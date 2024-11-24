@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import dataMySkill from '../json/myskill.json'
 import durationSkill from '../json/durationSkill.json'
 import profileData from '../json/myprofile.json';
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const SkillPage = () => {
     const [popup, setPopup] = useState(false);
@@ -26,6 +27,9 @@ const SkillPage = () => {
             setSkill(data)
         }
     }
+    const redirectLink = (link: string) => {
+        window.location.href = link
+    }
     return (
         <div className='col-span-1 p-4 text-white'>
             <div>
@@ -39,20 +43,24 @@ const SkillPage = () => {
                                 experience: calculateDuration(item.name),
                                 status: item.status
 
-                            })}
-                                className={`items-center grid bg-gray-700 p-3 rounded-lg w-full 
+                            })}>
+                                <div className={`items-center grid bg-gray-700 p-3 rounded-t-lg w-full 
                                 ${item.company ? "grid-cols-2" : "grid-cols-1"
                                     }`
                                 }>
-                                <div className="text-left">
-                                    <h3 className="text-lg font-semibold">{item.name}</h3>
-                                    <h4>{item.status}</h4>
+                                    <div className="text-left">
+                                        <h3 className="text-lg font-semibold">{item.name}</h3>
+                                        <h4>{item.status}</h4>
+                                    </div>
+                                    {item.company ?
+                                        <h6 className="text-right">{calculateDuration(item.name)} month</h6>
+                                        : null}
                                 </div>
                                 {item.company ?
-                                    <div className="text-right">
-                                        <h5 className='text-red-400'>experienced</h5>
-                                        <h6>{calculateDuration(item.name)} month</h6>
+                                    <div className="text-right bg-blue-400 px-4 py-1 rounded-b-lg">
+                                        <h5 className='text-white'>Experience Detail</h5>
                                     </div> : null}
+
 
                             </button>
                         )
@@ -65,7 +73,9 @@ const SkillPage = () => {
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                     {profileData.contact.map((value, key) => (
-                        <div key={key} className='grid grid-cols-4 rounded-lg bg-gray-700 p-1 items-center text-white'>
+                        <button disabled={value.link == null}
+                            key={key} onClick={() => value.link ? redirectLink(value.link) : ""}
+                            className='grid grid-cols-4 w-full rounded-lg bg-gray-700 p-1 items-center text-white mt-2'>
                             <div>
                                 {value.icon ?
                                     <div className='flex bg-white rounded-lg justify-center items-center w-8 h-8 m-1'>
@@ -77,8 +87,11 @@ const SkillPage = () => {
                                         backgroundImage: `url(${require(`../assets/${value.image}`)})`,
                                     }} />}
                             </div>
-                            <h1 className='text-right mr-5 col-span-3'>{value.value}</h1>
-                        </div>
+                            <div className="flex mr-5 col-span-3 items-center">
+                                <h1 className='text-right' style={{ flex: 1, textAlign: 'right' }}>{value.value}</h1>
+                                {value.link ? <FaExternalLinkAlt className="ml-2" /> : null}
+                            </div>
+                        </button>
                     ))}
                 </div>
             </div>

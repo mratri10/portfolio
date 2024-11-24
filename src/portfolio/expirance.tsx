@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import experienceData from '../json/experience.json';
+import { BiArrowToBottom, BiArrowToTop } from "react-icons/bi";
 
 const ExpirancePage = () => {
     const [showJob, setShowJob] = useState<number>(99)
@@ -37,10 +38,10 @@ const ExpirancePage = () => {
         // Build the duration string
         const parts = [];
         if (years > 0) parts.push(`${years} year${years > 1 ? "s" : ""}`);
-        if (months > 0) parts.push(`${months} month${months > 1 ? "s" : ""}`);
+        if (months > 0) parts.push(`${months} mon`);
         // if (days > 0) parts.push(`${days} day${days > 1 ? "s" : ""}`);
 
-        return parts.length > 0 ? parts.join(", ") : "0 days";
+        return parts.length > 0 ? parts.join(" ") : "0 days";
     };
     const dateSimple = (start: string, end?: string) => {
         const parseDate = (dateStr: string): string => {
@@ -119,7 +120,7 @@ const ExpirancePage = () => {
         <div className='col-span-1 p-4 '>
             <div className="text-white ">
                 <h2 className="text-xl font-bold">My Experience</h2>
-                {experienceData.map((item, i) => (
+                {[...experienceData].reverse().map((item, i) => (
                     <div key={i} ref={(el) => (cardRefs.current[i] = el)}>
                         <button onClick={() => showJob !== i ? setShowJob(i) : setShowJob(99)}
                             className={`items-center mt-3 bg-gray-700 p-3 rounded-lg w-full }`
@@ -136,8 +137,16 @@ const ExpirancePage = () => {
                                 </div>
                             </div>
 
-                            {item.oursource != null ? <h1>Onsite to: </h1> : null}
-                            <h1>{onsite(item.oursource)}</h1>
+                            <div className="grid grid-cols-2">
+                                <div className="justify-items-start">
+                                    {item.oursource != null ? <h1>Onsite to: </h1> : null}
+                                    <h1 className="text-left">{onsite(item.oursource)}</h1>
+                                </div>
+                                <div className="justify-items-end self-end ">
+                                    {showJob !== i && showJob === 99 ? <BiArrowToBottom className="text-2xl" /> :
+                                        <BiArrowToTop className="text-2xl" />}
+                                </div>
+                            </div>
                         </button>
                         <div className={`mt-1 bg-white text-black p-4 rounded-t-lg ${showJob === i && showJob !== 99 ? "block" : "hidden"}`}>
                             <div className="border-b-2 border-black">

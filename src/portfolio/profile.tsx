@@ -2,6 +2,7 @@ import React from "react"
 import profileData from '../json/myprofile.json';
 import mygambar from '../assets/atri.png';
 import { BsGenderMale, BsGenderFemale } from 'react-icons/bs'
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const ProfilePage = () => {
     const countAge = (birthday: string): number => {
@@ -30,6 +31,9 @@ const ProfilePage = () => {
             return "";
         }
     };
+    const redirectLink = (link: string) => {
+        window.location.href = link
+    }
     return (
         <div className='col-span-1 p-4 text-white'>
             <div className=' border-b-4 border-white pb-2'>
@@ -54,7 +58,9 @@ const ProfilePage = () => {
                     <h1 className='text-xl font-semibold'>Contact</h1>
                 </div>
                 {profileData.contact.map((value, key) => (
-                    <div key={key} className='grid grid-cols-4 rounded-lg bg-gray-700 p-1 items-center text-white mt-2'>
+                    <button disabled={value.link == null}
+                        key={key} onClick={() => value.link ? redirectLink(value.link) : ""}
+                        className='grid grid-cols-4 w-full rounded-lg bg-gray-700 p-1 items-center text-white mt-2'>
                         <div>
                             {value.icon ?
                                 <div className='flex bg-white rounded-lg justify-center items-center w-8 h-8 m-1'>
@@ -66,8 +72,11 @@ const ProfilePage = () => {
                                     backgroundImage: `url(${require(`../assets/${value.image}`)})`,
                                 }} />}
                         </div>
-                        <h1 className='text-right mr-5 col-span-3' style={{ flex: 1, textAlign: 'right' }}>{value.value}</h1>
-                    </div>
+                        <div className="flex mr-5 col-span-3 items-center">
+                            <h1 className='text-right' style={{ flex: 1, textAlign: 'right' }}>{value.value}</h1>
+                            {value.link ? <FaExternalLinkAlt className="ml-2" /> : null}
+                        </div>
+                    </button>
                 ))}
             </div>
             <div className='pt-5'>
