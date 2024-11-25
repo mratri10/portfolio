@@ -44,24 +44,22 @@ const SkillPage = () => {
                                 status: item.status
 
                             })}>
-                                <div className={`items-center grid bg-gray-700 p-3 rounded-t-lg w-full 
-                                ${item.company ? "grid-cols-2" : "grid-cols-1"
-                                    }`
-                                }>
-                                    <div className="text-left">
-                                        <h3 className="text-lg font-semibold">{item.name}</h3>
-                                        <h4>{item.status}</h4>
+                                <div className="bg-gray-700 p-3 rounded-t-lg">
+                                    <h3 className="text-lg font-semibold text-left">{item.name}</h3>
+                                    <div className={`items-center grid w-full 
+                                        ${item.company ? "grid-cols-2" : "grid-cols-1"
+                                        }`
+                                    }>
+                                        <h4 className="text-left">{item.status}</h4>
+                                        {item.company ?
+                                            <h6 className="text-right">{calculateDuration(item.name)} month</h6>
+                                            : null}
                                     </div>
-                                    {item.company ?
-                                        <h6 className="text-right">{calculateDuration(item.name)} month</h6>
-                                        : null}
                                 </div>
                                 {item.company ?
                                     <div className="text-right bg-blue-400 px-4 py-1 rounded-b-lg">
-                                        <h5 className='text-white'>Experience Detail</h5>
+                                        <h5 className='text-white'>Skill Detail</h5>
                                     </div> : null}
-
-
                             </button>
                         )
                     })}
@@ -71,29 +69,27 @@ const SkillPage = () => {
                 <div className='pt-5'>
                     <h1 className='text-xl font-semibold'>Contact</h1>
                 </div>
-                <div className="grid grid-cols-2 gap-2">
-                    {profileData.contact.map((value, key) => (
-                        <button disabled={value.link == null}
-                            key={key} onClick={() => value.link ? redirectLink(value.link) : ""}
-                            className='grid grid-cols-4 w-full rounded-lg bg-gray-700 p-1 items-center text-white mt-2'>
-                            <div>
-                                {value.icon ?
-                                    <div className='flex bg-white rounded-lg justify-center items-center w-8 h-8 m-1'>
-                                        <div className='bg-cover w-5 h-5' style={{
-                                            backgroundImage: `url(${require(`../assets/${value.image}`)})`,
-                                        }} />
-                                    </div> :
-                                    <div className='bg-cover w-8 h-8 m-1' style={{
+                {profileData.contact.map((value, key) => (
+                    <button disabled={value.link == null}
+                        key={key} onClick={() => value.link ? redirectLink(value.link) : ""}
+                        className='flex w-full rounded-lg bg-gray-700 p-1 items-center text-white mt-2'>
+                        <div>
+                            {value.icon ?
+                                <div className='flex bg-white rounded-lg justify-center items-center w-8 h-8 m-1'>
+                                    <div className='bg-cover w-5 h-5' style={{
                                         backgroundImage: `url(${require(`../assets/${value.image}`)})`,
-                                    }} />}
-                            </div>
-                            <div className="flex mr-5 col-span-3 items-center">
-                                <h1 className='text-right' style={{ flex: 1, textAlign: 'right' }}>{value.value}</h1>
-                                {value.link ? <FaExternalLinkAlt className="ml-2" /> : null}
-                            </div>
-                        </button>
-                    ))}
-                </div>
+                                    }} />
+                                </div> :
+                                <div className='bg-cover w-8 h-8 m-1' style={{
+                                    backgroundImage: `url(${require(`../assets/${value.image}`)})`,
+                                }} />}
+                        </div>
+                        <div className="flex mr-1 items-left ml-2">
+                            <h1 style={{ flex: 1, textAlign: 'left' }}>{value.value}</h1>
+                            {value.link ? <FaExternalLinkAlt className="ml-2" /> : null}
+                        </div>
+                    </button>
+                ))}
             </div>
             {popup ?
                 <div className="fixed inset-0 items-center justify-center bg-black bg-opacity-50 hidden lg:block">

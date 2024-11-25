@@ -60,7 +60,7 @@ const ProfilePage = () => {
                 {profileData.contact.map((value, key) => (
                     <button disabled={value.link == null}
                         key={key} onClick={() => value.link ? redirectLink(value.link) : ""}
-                        className='grid grid-cols-4 w-full rounded-lg bg-gray-700 p-1 items-center text-white mt-2'>
+                        className='flex w-full rounded-lg bg-gray-700 p-1 items-center text-white mt-2'>
                         <div>
                             {value.icon ?
                                 <div className='flex bg-white rounded-lg justify-center items-center w-8 h-8 m-1'>
@@ -72,8 +72,8 @@ const ProfilePage = () => {
                                     backgroundImage: `url(${require(`../assets/${value.image}`)})`,
                                 }} />}
                         </div>
-                        <div className="flex mr-5 col-span-3 items-center">
-                            <h1 className='text-right' style={{ flex: 1, textAlign: 'right' }}>{value.value}</h1>
+                        <div className="flex mr-1 items-left ml-2">
+                            <h1 style={{ flex: 1, textAlign: 'left' }}>{value.value}</h1>
                             {value.link ? <FaExternalLinkAlt className="ml-2" /> : null}
                         </div>
                     </button>
