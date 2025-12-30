@@ -18,7 +18,8 @@ export const Hero: React.FC = () => {
                             {profileData.name}
                         </h1>
                         <h3 className="text-2xl md:text-3xl font-heading text-slate-300 animate-fade-in">
-                            <span className="text-gradient font-bold">{profileData.role[0]}</span>
+                            {profileData.role.map((v, i) => <span className="text-gradient font-bold">{v + (i < profileData.role.length - 1 ? " - " : "")}</span>)}
+
                         </h3>
                     </div>
 
@@ -46,7 +47,7 @@ export const Hero: React.FC = () => {
                             <img
                                 src={profileImage}
                                 alt={profileData.name}
-                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
                             />
                         </div>
                     </div>

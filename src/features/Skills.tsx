@@ -44,11 +44,12 @@ export const Skills: React.FC = () => {
                     <Card className="min-h-[400px]">
                         <div className="space-y-6 animate-fade-in" key={activeTab}>
                             <div className="flex justify-between items-start">
-                                <div>
+                                <div className='flex-1'>
                                     <h3 className="text-2xl font-bold text-white">{skills[activeTab].name}</h3>
-                                    <p className="text-primary-400">{skills[activeTab].status} • Since {skills[activeTab].since}</p>
+                                    <p className="text-primary-400">{skills[activeTab].status}</p>
+                                    <p className="text-primary-400">Since {skills[activeTab].since}</p>
                                 </div>
-                                <div className="text-right hidden md:block">
+                                <div className="flex-1 text-right hidden md:block">
                                     <span className="text-xs text-slate-500 uppercase tracking-wider">Used at</span>
                                     <div className="flex flex-wrap gap-2 justify-end mt-1">
                                         {skills[activeTab].company && skills[activeTab].company?.map(c => (
@@ -62,15 +63,15 @@ export const Skills: React.FC = () => {
                                 {skills[activeTab].details && skills[activeTab].details.length > 0 ? (
                                     skills[activeTab].details.map((detail, i) => (
                                         <div key={i} className="bg-dark-bg/50 p-4 rounded-lg">
-                                            <h4 className="font-bold text-white mb-2 flex items-center gap-2">
+                                            <h4 className="font-bold text-white flex items-center gap-2">
                                                 <FaCheckCircle className="text-primary-500 text-sm" />
                                                 {detail.title}
                                             </h4>
-                                            <ul className="text-sm text-slate-400 space-y-1 list-disc list-inside">
+                                            {/* <ul className="text-sm text-slate-400 space-y-1 list-disc list-inside">
                                                 {detail.description.map((desc, j) => (
                                                     <li key={j}>{desc}</li>
                                                 ))}
-                                            </ul>
+                                            </ul> */}
                                         </div>
                                     ))
                                 ) : (

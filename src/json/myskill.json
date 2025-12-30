@@ -2,7 +2,7 @@
     "skills": [
         {
             "name": "React Native",
-            "since": "11-11-2019",
+            "since": "11 November 2019",
             "status": "Expert",
             "type": "Mobile Developer",
             "company": [
@@ -100,7 +100,7 @@
         },
         {
             "name": "Flutter",
-            "since": "06-08-2018",
+            "since": "06 August 2018",
             "status": "Intermediate",
             "type": "Mobile Developer",
             "company": [
@@ -186,7 +186,7 @@
         },
         {
             "name": "Android Native",
-            "since": "04-03-2019",
+            "since": "04 March 2019",
             "status": "Intermediate",
             "type": "Mobile Developer",
             "company": [
@@ -281,7 +281,7 @@
         },
         {
             "name": "Spring Boot",
-            "since": "26-02-2024",
+            "since": "26 February 2024",
             "status": "Intermediate",
             "type": "Back End Developer",
             "company": [
@@ -328,28 +328,28 @@
         },
         {
             "name": "React TS/JS",
-            "since": "03-02-2019",
+            "since": "03 February 2019",
             "status": "Intermediate",
             "type": "Web Developer",
             "details": []
         },
         {
             "name": "Express JS",
-            "since": "05-06-2023",
+            "since": "05 June 2023",
             "status": "Beginner",
             "type": "Back End Developer",
             "details": []
         },
         {
             "name": "Codeigniter",
-            "since": "03-06-2019",
+            "since": "03 June 2019",
             "status": "Intermediate",
             "type": "Fullstack Developer",
             "details": []
         },
         {
             "name": "Laravel",
-            "since": "03-02-2019",
+            "since": "03 February 2019",
             "status": "Intermediate",
             "type": "Fullstack Developer",
             "details": []

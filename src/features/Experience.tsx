@@ -41,7 +41,7 @@ export const Experience: React.FC = () => {
                                     </div>
                                     <div className="flex items-center gap-2">
                                         <FaMapMarkerAlt className="text-primary-500" />
-                                        <span>{exp.address.split(',').slice(-2).join(', ')}</span>
+                                        <span>{exp.address}</span>
                                         {/* Simplified address for cleaner look */}
                                     </div>
                                 </div>
@@ -49,7 +49,6 @@ export const Experience: React.FC = () => {
 
                             <div className="space-y-2">
                                 <div className="flex items-start gap-2">
-                                    <FaBriefcase className="text-primary-500 mt-1 flex-shrink-0" />
                                     <ul className="list-disc list-inside text-slate-300 space-y-1 text-sm md:text-base">
                                         {exp.jobDescription.map((desc, i) => (
                                             <li key={i}>{desc}</li>

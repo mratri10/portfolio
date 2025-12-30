@@ -8,8 +8,8 @@
             "Developing native mobile applications using Flutter",
             "Providing ideas for new features"
         ],
-        "startDate": "06-08-2018",
-        "endDate": "09-02-2019"
+        "startDate": "06 August 2018",
+        "endDate": "09 February 2019"
     },
     {
         "id": 2,
@@ -21,8 +21,8 @@
             "Monitoring servers with Dynatrace",
             "Collaborating with the backend team to integrate APIs"
         ],
-        "startDate": "05-02-2019",
-        "endDate": "08-11-2019",
+        "startDate": "05 February 2019",
+        "endDate": "08 November 2019",
         "outsource": [
             "PT Puninar Jaya",
             "PT PLN",
@@ -39,8 +39,8 @@
             "Developing native mobile applications using React Native",
             "Providing suggestions for new system improvements"
         ],
-        "startDate": "11-11-2019",
-        "endDate": "28-05-2021"
+        "startDate": "11 November 2019",
+        "endDate": "28 May 2021"
     },
     {
         "id": 4,
@@ -53,8 +53,8 @@
             "Collaborating with the backend team to integrate APIs",
             "Fixing bugs based on QA reports"
         ],
-        "startDate": "16-05-2021",
-        "endDate": "20-09-2021"
+        "startDate": "16 May 2021",
+        "endDate": "20 September 2021"
     },
     {
         "id": 5,
@@ -67,8 +67,8 @@
             "Writing unit tests to ensure code quality, improving test coverage to 85%.",
             "Collaborating with the backend team to integrate APIs."
         ],
-        "startDate": "02-08-2021",
-        "endDate": "06-09-2022",
+        "startDate": "02 August 2021",
+        "endDate": "06 September 2022",
         "outsource": [
             "PT Sinarmas"
         ]
@@ -81,8 +81,8 @@
         "jobDescription": [
             "Developing native mobile applications using React Native."
         ],
-        "startDate": "06-06-2022",
-        "endDate": "31-12-2022",
+        "startDate": "06 June 2022",
+        "endDate": "31 December 2022",
         "outsource": [
             "PT Danamas"
         ]
@@ -99,8 +99,8 @@
             "Collaborating with cross-functional teams to analyze and resolve various technical issues efficiently.",
             "Identifying and fixing bugs based on reports from the Product Team."
         ],
-        "startDate": "16-01-2023",
-        "endDate": "Present",
+        "startDate": "16 January 2023",
+        "endDate": "16 July 2025",
         "outsource": [
             "PT Astra Welab Digital Arta"
         ]
