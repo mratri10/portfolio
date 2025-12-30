@@ -1,107 +1,108 @@
 [
     {
-        "id":1,
-        "company":"PT Medisoft International",
-        "alamat":"Jl. Tlk. Gong Sel. (Fajar) No.23 7, RT.7/RW.17 14450 Daerah Khusus Ibukota Jakarta",
-        "telp":"(021) 6667 7408",
-        "job": [
+        "id": 1,
+        "company": "PT Medisoft International",
+        "address": "Jl. Tlk. Gong Sel. (Fajar) No.23 7, RT.7/RW.17 14450 DKI Jakarta",
+        "phone": "(021) 6667 7408",
+        "jobDescription": [
             "Developing native mobile applications using Flutter",
             "Providing ideas for new features"
         ],
-        "mulai":"06-08-2018",
-        "selesai":"09-02-2019"
+        "startDate": "06-08-2018",
+        "endDate": "09-02-2019"
     },
     {
-        "id":2,
-        "company":"PT FAN Integrasi Teknologi",
-        "alamat":"Ruko Perumahan Taman Kota No. H7 Bekasi Jaya Bekasi Jawa Barat 17112",
-        "telp":"087876783050",
-        "job": [
+        "id": 2,
+        "company": "PT FAN Integrasi Teknologi",
+        "address": "Ruko Perumahan Taman Kota No. H7 Bekasi Jaya, Bekasi, West Java 17112",
+        "phone": "087876783050",
+        "jobDescription": [
             "Developing native mobile applications using Android Native (Java)",
             "Monitoring servers with Dynatrace",
             "Collaborating with the backend team to integrate APIs"
         ],
-        "mulai":"05-02-2019",
-        "selesai":"08-11-2019",
-        "oursource":[
+        "startDate": "05-02-2019",
+        "endDate": "08-11-2019",
+        "outsource": [
             "PT Puninar Jaya",
             "PT PLN",
             "PT Adira",
-            "PT Bank Negara Indonesia TBK"   
+            "PT Bank Negara Indonesia TBK"
         ]
     },
     {
-        "id":3,
-        "company":"PT Arnawa Teknologi Informasi",
-        "alamat":"Graha Kas, Komp. Perkantoran Kebayoran Baru Mall Kota Administrasi Jakarta Selatan DKI Jakarta",
-        "telp":"087780030151",
-        "job":[
+        "id": 3,
+        "company": "PT Arnawa Teknologi Informasi",
+        "address": "Graha Kas, Kebayoran Baru, South Jakarta, DKI Jakarta",
+        "phone": "087780030151",
+        "jobDescription": [
             "Developing native mobile applications using React Native",
             "Providing suggestions for new system improvements"
         ],
-        "mulai":"11-11-2019",
-        "selesai":"28-05-2021"
+        "startDate": "11-11-2019",
+        "endDate": "28-05-2021"
     },
     {
-        "id":4,
-        "company":"PT Multiartha Prima Sejahtera",
-        "alamat":"Ruko Sentra Gading Serpong blok SG-1 No. 33 Summarecon, Tangerang 15810",
-        "telp":"(021) 5366 4008",
-        "job":[
+        "id": 4,
+        "company": "PT Multiartha Prima Sejahtera",
+        "address": "Ruko Sentra Gading Serpong blok SG-1 No. 33 Summarecon, Tangerang 15810",
+        "phone": "(021) 5366 4008",
+        "jobDescription": [
             "Developing native mobile applications using React Native",
             "Integrating app data with data from external applications",
             "Collaborating with the backend team to integrate APIs",
             "Fixing bugs based on QA reports"
         ],
-        "mulai":"16-05-2021",
-        "selesai":"20-09-2021"
+        "startDate": "16-05-2021",
+        "endDate": "20-09-2021"
     },
     {
-        "id":5,
-        "company":"PT Nityo Infotech",
-        "alamat":"Jl. K.H. Mas Mansyur No.14, RT.8/RW.7, Kb. Kacang, Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10240",
-        "telp":"(021) 2295 8980",
-        "job":[
+        "id": 5,
+        "company": "PT Nityo Infotech",
+        "address": "Jl. K.H. Mas Mansyur No.14, Central Jakarta, DKI Jakarta 10240",
+        "phone": "(021) 2295 8980",
+        "jobDescription": [
             "Developing native mobile applications using Flutter.",
             "Collaborating with the team to resolve issues.",
             "Writing unit tests to ensure code quality, improving test coverage to 85%.",
             "Collaborating with the backend team to integrate APIs."
         ],
-        "mulai":"02-08-2021",
-        "selesai":"06-09-2022",
-        "oursource":[
-            "PT Sinarmas" 
+        "startDate": "02-08-2021",
+        "endDate": "06-09-2022",
+        "outsource": [
+            "PT Sinarmas"
         ]
     },
     {
-        "id":6,
-        "company":"PT Andhara Prima Kreatif",
-        "alamat":"Marga Kencana Townhouse, Jl. Margawangi Selatan V No.17, Cijaura, Kec. Buahbatu Kota Bandung Jawa Barat",
-        "telp":"(022) 87517580",
-        "job":[
+        "id": 6,
+        "company": "PT Andhara Prima Kreatif",
+        "address": "Marga Kencana Townhouse, Jl. Margawangi Selatan V No.17, Bandung, West Java",
+        "phone": "(022) 87517580",
+        "jobDescription": [
             "Developing native mobile applications using React Native."
         ],
-        "mulai":"06-06-2022",
-        "selesai":"31-12-2022",
-        "oursource":[
-            "PT Danamas" 
+        "startDate": "06-06-2022",
+        "endDate": "31-12-2022",
+        "outsource": [
+            "PT Danamas"
         ]
     },
     {
-        "id":7,
-        "company":"PT Pedepokan 79",
-        "alamat":"No. 6a Jalan. Cihampelas, Gg. Terasana 40171 Cicendo Jawa Barat",
-        "telp":"(021) 2295 8980",
-        "job":[
+        "id": 7,
+        "company": "PT Pedepokan 79",
+        "address": "No. 6a Jalan. Cihampelas, Gg. Terasana 40171, Bandung, West Java",
+        "phone": "(021) 2295 8980",
+        "jobDescription": [
             "Developing high-performance mobile applications using React Native, ensuring an optimal user experience.",
             "Integrating and managing APIs with Spring Boot to support reliable application performance.",
             "Enhancing application security through the implementation of obfuscation and data encryption.",
             "Collaborating with cross-functional teams to analyze and resolve various technical issues efficiently.",
             "Identifying and fixing bugs based on reports from the Product Team."
         ],
-        "mulai":"16-01-2023",
-        "oursource":[
-            "PT Astra Welab Digital Arta" 
+        "startDate": "16-01-2023",
+        "endDate": "Present",
+        "outsource": [
+            "PT Astra Welab Digital Arta"
         ]
     }
 ]
