@@ -1,0 +1,108 @@
+[
+    {
+        "id": 1,
+        "company": "PT Medisoft International",
+        "address": "Jl. Tlk. Gong Sel. (Fajar) No.23 7, RT.7/RW.17 14450 DKI Jakarta",
+        "phone": "(021) 6667 7408",
+        "jobDescription": [
+            "Developing native mobile applications using Flutter",
+            "Providing ideas for new features"
+        ],
+        "startDate": "06 August 2018",
+        "endDate": "09 February 2019"
+    },
+    {
+        "id": 2,
+        "company": "PT FAN Integrasi Teknologi",
+        "address": "Ruko Perumahan Taman Kota No. H7 Bekasi Jaya, Bekasi, West Java 17112",
+        "phone": "087876783050",
+        "jobDescription": [
+            "Developing native mobile applications using Android Native (Java)",
+            "Monitoring servers with Dynatrace",
+            "Collaborating with the backend team to integrate APIs"
+        ],
+        "startDate": "05 February 2019",
+        "endDate": "08 November 2019",
+        "outsource": [
+            "PT Puninar Jaya",
+            "PT PLN",
+            "PT Adira",
+            "PT Bank Negara Indonesia TBK"
+        ]
+    },
+    {
+        "id": 3,
+        "company": "PT Arnawa Teknologi Informasi",
+        "address": "Graha Kas, Kebayoran Baru, South Jakarta, DKI Jakarta",
+        "phone": "087780030151",
+        "jobDescription": [
+            "Developing native mobile applications using React Native",
+            "Providing suggestions for new system improvements"
+        ],
+        "startDate": "11 November 2019",
+        "endDate": "28 May 2021"
+    },
+    {
+        "id": 4,
+        "company": "PT Multiartha Prima Sejahtera",
+        "address": "Ruko Sentra Gading Serpong blok SG-1 No. 33 Summarecon, Tangerang 15810",
+        "phone": "(021) 5366 4008",
+        "jobDescription": [
+            "Developing native mobile applications using React Native",
+            "Integrating app data with data from external applications",
+            "Collaborating with the backend team to integrate APIs",
+            "Fixing bugs based on QA reports"
+        ],
+        "startDate": "16 May 2021",
+        "endDate": "20 September 2021"
+    },
+    {
+        "id": 5,
+        "company": "PT Nityo Infotech",
+        "address": "Jl. K.H. Mas Mansyur No.14, Central Jakarta, DKI Jakarta 10240",
+        "phone": "(021) 2295 8980",
+        "jobDescription": [
+            "Developing native mobile applications using Flutter.",
+            "Collaborating with the team to resolve issues.",
+            "Writing unit tests to ensure code quality, improving test coverage to 85%.",
+            "Collaborating with the backend team to integrate APIs."
+        ],
+        "startDate": "02 August 2021",
+        "endDate": "06 September 2022",
+        "outsource": [
+            "PT Sinarmas"
+        ]
+    },
+    {
+        "id": 6,
+        "company": "PT Andhara Prima Kreatif",
+        "address": "Marga Kencana Townhouse, Jl. Margawangi Selatan V No.17, Bandung, West Java",
+        "phone": "(022) 87517580",
+        "jobDescription": [
+            "Developing native mobile applications using React Native."
+        ],
+        "startDate": "06 June 2022",
+        "endDate": "31 December 2022",
+        "outsource": [
+            "PT Danamas"
+        ]
+    },
+    {
+        "id": 7,
+        "company": "PT Pedepokan 79",
+        "address": "No. 6a Jalan. Cihampelas, Gg. Terasana 40171, Bandung, West Java",
+        "phone": "(021) 2295 8980",
+        "jobDescription": [
+            "Developing high-performance mobile applications using React Native, ensuring an optimal user experience.",
+            "Integrating and managing APIs with Spring Boot to support reliable application performance.",
+            "Enhancing application security through the implementation of obfuscation and data encryption.",
+            "Collaborating with cross-functional teams to analyze and resolve various technical issues efficiently.",
+            "Identifying and fixing bugs based on reports from the Product Team."
+        ],
+        "startDate": "16 January 2023",
+        "endDate": "16 July 2025",
+        "outsource": [
+            "PT Astra Welab Digital Arta"
+        ]
+    }
+]

@@ -1,0 +1,95 @@
+{
+    "name": "Atri Ariska Alfa",
+    "birthday": "28-08-1994",
+    "birthplace": "Bukittinggi",
+    "gender": "Male",
+    "motto": "From Zero to Hero with Learn Everywhere",
+    "role": [
+        "Mobile Developer",
+        "Fullstack Developer",
+        "Back End Developer",
+        "Web Developer"
+    ],
+    "education": [
+        {
+            "name": "SDN 11 Balai Gurah",
+            "startDate": 2000,
+            "endDate": 2007,
+            "major": "",
+            "city": "Agam Regency"
+        },
+        {
+            "name": "SMPN 02 Ampek Angkek",
+            "startDate": 2007,
+            "endDate": 2010,
+            "major": "",
+            "city": "Agam Regency"
+        },
+        {
+            "name": "SMAN 01 Ampek Angkek",
+            "startDate": 2010,
+            "endDate": 2013,
+            "major": "Science",
+            "city": "Agam Regency"
+        },
+        {
+            "name": "Bogor Agricultural University",
+            "startDate": 2013,
+            "endDate": 2018,
+            "major": "Mechanical and Biosystem Engineering",
+            "city": "Bogor"
+        }
+    ],
+    "contact": [
+        {
+            "name": "Phone",
+            "value": "08127097395",
+            "image": "phone/phone_white.png",
+            "icon": true
+        },
+        {
+            "name": "Whatsapp",
+            "value": "08127097395",
+            "image": "whatsapp.png",
+            "icon": false
+        },
+        {
+            "name": "Email",
+            "value": "atriariskaalfa10@gmail.com",
+            "image": "mail/mail_white.png",
+            "icon": true
+        },
+        {
+            "name": "LinkedIn",
+            "value": "atri-alfa",
+            "image": "linkedin.png",
+            "icon": false,
+            "link": "https://www.linkedin.com/in/atri-alfa-883025133/"
+        },
+        {
+            "name": "GitHub",
+            "value": "mratri10",
+            "image": "github.png",
+            "icon": true,
+            "link": "https://github.com/mratri10/"
+        }
+    ],
+    "addresses": [
+        {
+            "label": "ID Card Address",
+            "province": "West Java",
+            "city": "Bekasi City",
+            "district": "Pondok Gede",
+            "subDistrict": "Jaticempaka",
+            "street": "Jalan Kemang Raya no 63, RT/RW 002/002"
+        },
+        {
+            "label": "Domicile Address",
+            "province": "DKI Jakarta",
+            "city": "South Jakarta",
+            "district": "Cilandak",
+            "subDistrict": "Lebak Bulus",
+            "street": "Jalan Lebak Bulus Raya no 5F, RT/RW 04/01"
+        }
+    ]
+}

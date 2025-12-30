@@ -1,0 +1,358 @@
+{
+    "skills": [
+        {
+            "name": "React Native",
+            "since": "11 November 2019",
+            "status": "Expert",
+            "type": "Mobile Developer",
+            "company": [
+                {
+                    "id": 3,
+                    "name": "PT Arnawa Teknologi Informasi"
+                },
+                {
+                    "id": 4,
+                    "name": "PT Multiartha Prima Sejahtera"
+                },
+                {
+                    "id": 6,
+                    "name": "PT Andhara Prima Kreatif"
+                },
+                {
+                    "id": 7,
+                    "name": "PT Pedepokan 79"
+                }
+            ],
+            "details": [
+                {
+                    "title": "React Native Core",
+                    "description": [
+                        "Component Lifecycle: Understanding React Native component lifecycle.",
+                        "State Management: Using useState, useReducer, and Context API.",
+                        "Hooks: Deep understanding of useEffect, useRef, useCallback, useMemo, etc.",
+                        "Styling: Mastering styling with StyleSheet, Flexbox, and libraries like styled-components or Emotion.",
+                        "Navigation: Using libraries like React Navigation and understanding stack, tab, and drawer navigation concepts.",
+                        "Performance Optimization: Optimizing apps using React.memo, FlatList optimization, etc."
+                    ]
+                },
+                {
+                    "title": "Advanced JavaScript/TypeScript",
+                    "description": [
+                        "Functional Programming: Immutability, higher-order functions like map, reduce, filter.",
+                        "TypeScript: Writing safe code using types, interfaces, and generics."
+                    ]
+                },
+                {
+                    "title": "Native Modules",
+                    "description": [
+                        "Bridge: Creating bridges between JavaScript code and native modules (Android/Java and iOS/Swift/Obj-C).",
+                        "Native Library Integration: Understanding how to integrate third-party libraries requiring native code."
+                    ]
+                },
+                {
+                    "title": "Mobile Development Practices",
+                    "description": [
+                        "UI/UX Mobile: Understanding mobile design principles like responsiveness, pixel density, and user-friendly layouts.",
+                        "APIs & Networking: Using libraries like axios or fetch, handling loading states, errors, and retries.",
+                        "Offline Handling: Data caching with AsyncStorage and SQLite.",
+                        "Notifications: Push notification integration using Firebase."
+                    ]
+                },
+                {
+                    "title": "State Management",
+                    "description": [
+                        "Redux: Global state management using Redux Toolkit, Middleware.",
+                        "MobX: Modern alternative state management."
+                    ]
+                },
+                {
+                    "title": "Debugging & Profiling",
+                    "description": [
+                        "React Native Debugger: Using built-in or external devtools.",
+                        "Performance Profiling: Analyzing rendering time and memory usage.",
+                        "Crashlytics/Monitoring: Integration of services like Firebase Crashlytics."
+                    ]
+                },
+                {
+                    "title": "CI/CD & Deployment",
+                    "description": [
+                        "App Store Deployment: Managing build, signing, and upload processes to Play Store/App Store."
+                    ]
+                },
+                {
+                    "title": "Security",
+                    "description": [
+                        "Data Encryption: Ensuring sensitive data is encrypted.",
+                        "Authentication: Integrating authentication systems like OAuth, Firebase Auth, or Auth0.",
+                        "App Hardening: Reducing application vulnerability to reverse engineering."
+                    ]
+                },
+                {
+                    "title": "Soft Skills",
+                    "description": [
+                        "Code Review: Providing constructive feedback in PR reviews.",
+                        "Leadership: Mentoring junior developers.",
+                        "Problem Solving: Ability to analyze and solve problems efficiently.",
+                        "Team Collaboration: Effective communication with designers, backend engineers, and PMs."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Flutter",
+            "since": "06 August 2018",
+            "status": "Intermediate",
+            "type": "Mobile Developer",
+            "company": [
+                {
+                    "id": 1,
+                    "name": "PT Medisoft International"
+                },
+                {
+                    "id": 5,
+                    "name": "PT Nityo Infotech"
+                }
+            ],
+            "details": [
+                {
+                    "title": "Deep Flutter Understanding",
+                    "description": [
+                        "Widget Hierarchy: Understanding stateless and stateful widgets.",
+                        "Custom Widgets: Creating reusable and scalable widgets.",
+                        "Layouts: Mastering layouts like Row, Column, Stack, and Flex."
+                    ]
+                },
+                {
+                    "title": "State Management",
+                    "description": [
+                        "Inherently Flutter: Utilizing setState, InheritedWidget, and Provider.",
+                        "Bloc/Cubit: For event-driven architecture."
+                    ]
+                },
+                {
+                    "title": "Advanced Dart Programming",
+                    "description": [
+                        "Null Safety: Ensuring code is safe from null-pointer exceptions.",
+                        "Asynchronous Programming: Using Future, async/await, and Stream.",
+                        "Functional Programming: Using higher-order functions like map, reduce, where."
+                    ]
+                },
+                {
+                    "title": "UI/UX Development",
+                    "description": [
+                        "Theming: Managing global app themes with ThemeData.",
+                        "Layout Adaptation: Using MediaQuery and libraries like flutter_screenutil.",
+                        "Screen Support: Providing support for various screen sizes and orientations."
+                    ]
+                },
+                {
+                    "title": "API Integration",
+                    "description": [
+                        "Networking: Using libraries like http.",
+                        "RESTful APIs: Understanding HTTP methods (GET, POST, PUT, DELETE) and JSON format."
+                    ]
+                },
+                {
+                    "title": "Database and Storage",
+                    "description": [
+                        "SQLite with sqflite.",
+                        "Firebase Firestore.",
+                        "Secure Storage: Using flutter_secure_storage or Keychain/Keystore for sensitive data."
+                    ]
+                },
+                {
+                    "title": "Testing",
+                    "description": [
+                        "Unit Testing: Testing business logic with mocktail and mockito.",
+                        "Widget Testing: Testing UI and widget interactions.",
+                        "Integration Testing: Using integration_test."
+                    ]
+                },
+                {
+                    "title": "Mobile Development Practices",
+                    "description": [
+                        "Offline Mode: Managing data caching and synchronization.",
+                        "Notifications: Push notification integration with Firebase."
+                    ]
+                },
+                {
+                    "title": "Soft Skills",
+                    "description": [
+                        "Team Collaboration: Communicating with designers, backend engineers, and QA.",
+                        "Problem Solving: solving technical issues with efficient solutions."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Android Native",
+            "since": "04 March 2019",
+            "status": "Intermediate",
+            "type": "Mobile Developer",
+            "company": [
+                {
+                    "id": 5,
+                    "name": "PT FAN Integrasi Teknologi"
+                }
+            ],
+            "details": [
+                {
+                    "title": "Basic Android Knowledge",
+                    "description": [
+                        "Activity and Fragment lifecycle.",
+                        "Intent (explicit and implicit).",
+                        "Services (foreground, background, and bound services).",
+                        "Broadcast Receivers and Content Providers."
+                    ]
+                },
+                {
+                    "title": "UI Design",
+                    "description": [
+                        "Layout Creation: Creating layouts with XML.",
+                        "View Components: RecyclerView, CardView, and ConstraintLayout.",
+                        "Adaptability: Adjusting UI for various screen sizes and orientations.",
+                        "Material Design: Following Material Design principles for UI/UX.",
+                        "Components: Using BottomNavigationView, FloatingActionButton, etc."
+                    ]
+                },
+                {
+                    "title": "Advanced Kotlin Programming",
+                    "description": [
+                        "Extensions: Utilizing extension functions to add features to classes.",
+                        "Coroutines: Managing asynchronous operations using launch, async, withContext."
+                    ]
+                },
+                {
+                    "title": "Advanced Java Programming",
+                    "description": [
+                        "Concurrency: Using Thread, ExecutorService, and AsyncTask.",
+                        "Collections Framework: Mastering List, Map, Set, and Stream API.",
+                        "Generics: Creating flexible classes or methods with dynamic types."
+                    ]
+                },
+                {
+                    "title": "Architecture and Patterns",
+                    "description": [
+                        "Modern Android Architecture: MVVM (Model-View-ViewModel).",
+                        "ViewModel: Managing UI state.",
+                        "Room Database: Creating local databases with SQLite.",
+                        "Design Patterns: Singleton, Factory, Observer, and Repository."
+                    ]
+                },
+                {
+                    "title": "Networking and Data Handling",
+                    "description": [
+                        "Retrofit: Using Retrofit for REST API.",
+                        "HTTP Handling: With OkHttp.",
+                        "Serialization: Using Gson or Kotlin Serialization.",
+                        "Caching: Data caching using Room or SharedPreferences."
+                    ]
+                },
+                {
+                    "title": "Deployment",
+                    "description": [
+                        "Gradle: Managing dependencies and build configurations.",
+                        "Publishing: Managing keystore, signing, and app publishing.",
+                        "App Distribution: Using tools like Firebase App Distribution."
+                    ]
+                },
+                {
+                    "title": "Security",
+                    "description": [
+                        "Auth: Integrating OAuth2, Firebase Auth, or token-based login.",
+                        "Obfuscation: Adding ProGuard or Dexguard to protect code."
+                    ]
+                },
+                {
+                    "title": "Cloud Integration",
+                    "description": [
+                        "Firebase: Using Realtime Database, Firestore, and Cloud Messaging.",
+                        "Services: Adding services like video calls and maps."
+                    ]
+                },
+                {
+                    "title": "Soft Skills",
+                    "description": [
+                        "Problem Solving: Solving complex problems efficiently.",
+                        "Team Collaboration: Communicating with designers, backend engineers, and QA."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Spring Boot",
+            "since": "26 February 2024",
+            "status": "Intermediate",
+            "type": "Back End Developer",
+            "company": [
+                {
+                    "id": 7,
+                    "name": "PT Pedepokan 79"
+                }
+            ],
+            "details": [
+                {
+                    "title": "Deep Spring Framework Understanding",
+                    "description": [
+                        "Spring Core: Basic concepts like IoC, Dependency Injection, Bean Lifecycle.",
+                        "Spring MVC: Understanding RESTful API, handler methods, and model binding.",
+                        "Spring Data JPA: Using Hibernate, Entity relationships, JPQL, Criteria API, and query optimization."
+                    ]
+                },
+                {
+                    "title": "Database Management",
+                    "description": [
+                        "Relational Databases: Using MySQL. Understanding normalization and indexing.",
+                        "NoSQL Databases: Integration with MongoDB and Redis."
+                    ]
+                },
+                {
+                    "title": "Microservices Architecture",
+                    "description": [
+                        "Service Communication: Using Dubbo for inter-service communication."
+                    ]
+                },
+                {
+                    "title": "Testing",
+                    "description": [
+                        "Unit Testing: Using JUnit and Mockito for component testing."
+                    ]
+                },
+                {
+                    "title": "Soft Skills",
+                    "description": [
+                        "Problem Solving: Resolving complex issues with efficient solutions."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "React TS/JS",
+            "since": "03 February 2019",
+            "status": "Intermediate",
+            "type": "Web Developer",
+            "details": []
+        },
+        {
+            "name": "Express JS",
+            "since": "05 June 2023",
+            "status": "Beginner",
+            "type": "Back End Developer",
+            "details": []
+        },
+        {
+            "name": "Codeigniter",
+            "since": "03 June 2019",
+            "status": "Intermediate",
+            "type": "Fullstack Developer",
+            "details": []
+        },
+        {
+            "name": "Laravel",
+            "since": "03 February 2019",
+            "status": "Intermediate",
+            "type": "Fullstack Developer",
+            "details": []
+        }
+    ]
+}
